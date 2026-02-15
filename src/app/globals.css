@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
   font-size: 10pt;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
