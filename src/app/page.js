@@ -5,11 +5,11 @@ export default function Home() {
         
         {/* Header */}
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">adam bromell</h1>
-          <p className="text-lg text-gray-700 mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">adam bromell</h1>
+          <p className="mb-6">
             Creative Director | CCO & Co-founder, System Era (acquired by Devolver Digital)
           </p>
-          <div className="flex gap-6 text-base">
+          <div className="flex gap-6">
             <a 
               href="https://www.threads.net/@adambromell" 
               target="_blank" 
@@ -33,7 +33,7 @@ export default function Home() {
 
         {/* About */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">about</h2>
+          <h2 className="text-xl font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>
               I'm Adam Bromell — Creative Director and co-founder of System Era Softworks.
@@ -54,7 +54,7 @@ export default function Home() {
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">system era softworks</h2>
+          <h2 className="text-xl font-bold mb-4">system era softworks</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p className="font-medium">Astroneer // sandbox adventure game</p>
             <p>Co-founded 2014<br />Acquired by Devolver Digital, 2023</p>
@@ -67,9 +67,49 @@ export default function Home() {
 
         <hr className="border-gray-300 mb-12" />
 
+        {/* Additional History */}
+        <section className="mb-12">
+          <h2 className="text-xl font-bold mb-4">additional history</h2>
+          <div className="space-y-6 text-gray-800 leading-relaxed">
+            
+            <div>
+              <p className="font-medium">Ubisoft</p>
+              <p>2011-2016</p>
+              <p>Level artist, lead artist, assistant art director</p>
+            </div>
+
+            <div>
+              <p className="font-medium">Polycount</p>
+              <p>2006-2016</p>
+              <p>Community & team manager<br />Brought nearly 10x in community growth</p>
+            </div>
+
+            <div>
+              <p className="font-medium">Relic Entertainment</p>
+              <p>2009-2011</p>
+              <p>Artist</p>
+            </div>
+
+            <div>
+              <p className="font-medium">Threewave Software</p>
+              <p>2005-2009</p>
+              <p>Artist</p>
+            </div>
+
+            <div>
+              <p className="font-medium">Freelance</p>
+              <p>2001-2005</p>
+              <p>Artist</p>
+            </div>
+
+          </div>
+        </section>
+
+        <hr className="border-gray-300 mb-12" />
+
         {/* Contact */}
         <section>
-          <h2 className="text-2xl font-bold mb-4">contact</h2>
+          <h2 className="text-xl font-bold mb-4">contact</h2>
           <a 
             href="https://www.threads.net/@adambromell" 
             target="_blank" 
