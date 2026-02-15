@@ -4,8 +4,8 @@
 
 body {
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-  font-size: 10pt;
-  font-weight: 700;
+  font-size: 12pt;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

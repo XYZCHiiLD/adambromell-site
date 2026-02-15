@@ -7,7 +7,7 @@ export default function Home() {
         <header className="mb-12">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">adam bromell</h1>
           <p className="mb-6">
-            Creative Director | CCO & Co-founder, System Era (acquired by Devolver Digital)
+            Creative Director | CCO & Co-founder, System Era
           </p>
           <div className="flex gap-6">
             <a 
@@ -50,13 +50,24 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="text-xl font-bold mb-4">system era softworks</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>Astroneer // voxel sandbox technology</p>
-            <p>Starseeker: Astroneer Expeditions // massively co-operative</p>
-            <p>Co-founded 2014<br /><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Acquired by Devolver Digital, 2023</a></p>
-            <p>
-              15M+ players across all platforms since 2016<br />
-              #1 game on Steam at early access launch
-            </p>
+            <p>Co-founded 2014</p>
+            <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Acquired by Devolver Digital, 2023</a></p>
+            
+            <div className="mt-6">
+              <p className="font-bold">Astroneer</p>
+              <p>Base building survival sandbox</p>
+              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ambitious voxel technology</a></p>
+              <p>14M+ players across all platforms</p>
+              <p>#1 game on Steam at early access launch</p>
+            </div>
+
+            <div className="mt-6">
+              <p className="font-bold">Starseeker: Astroneer Expeditions</p>
+              <p>Massively co-operative expeditions</p>
+              <p>40+ player space station hub</p>
+              <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ethical, sustainable "live service"</a></p>
+              <p>Releasing 2026</p>
+            </div>
           </div>
         </section>
 
@@ -76,7 +87,7 @@ export default function Home() {
             <div>
               <p className="font-medium">Polycount</p>
               <p>2006-2016</p>
-              <p>Community & team manager<br />Brought nearly 10x in community growth</p>
+              <p>Community & team manager<br />~10x community growth</p>
             </div>
 
             <div>
