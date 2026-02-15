@@ -36,16 +36,10 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>
-              I'm Adam Bromell — Creative Director and co-founder of System Era Softworks.
+              As CCO and co-founder of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>, I've led the studio's creative vision from inception through to our 2023 acquisition by Devolver Digital. I first began building games as a 3D artist in 2001, and have spent the last decade as Creative Director for System Era's most ambitious projects.
             </p>
             <p>
-              3D artist turned creative director. Building games since 2004, directing System Era since 2014.
-            </p>
-            <p>
-              Led creative vision from concept to launch to acquisition by Devolver Digital in 2023.
-            </p>
-            <p>
-              Currently directing Starseeker: Astroneer Expeditions and serving as CCO. Outside of work: photography and design.
+              Outside of work, I have a passion for photography and product design.
             </p>
           </div>
         </section>
@@ -56,8 +50,9 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="text-xl font-bold mb-4">system era softworks</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p className="font-medium">Astroneer // sandbox adventure game</p>
-            <p>Co-founded 2014<br />Acquired by Devolver Digital, 2023</p>
+            <p>Astroneer // voxel sandbox technology</p>
+            <p>Starseeker: Astroneer Expeditions // massively co-operative</p>
+            <p>Co-founded 2014<br /><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Acquired by Devolver Digital, 2023</a></p>
             <p>
               15M+ players across all platforms since 2016<br />
               #1 game on Steam at early access launch
