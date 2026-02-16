@@ -5,7 +5,7 @@ export default function Home() {
         
         {/* Header */}
         <header className="mb-12">
-          <h1 className="font-bold mb-4">adam bromell</h1>
+          <h1 className="font-bold mb-2">adam bromell</h1>
         </header>
 
         {/* About - no heading */}
@@ -48,7 +48,7 @@ export default function Home() {
             </a>
           </p>
           <p>
-            instagram (photograph): <a 
+            instagram (photography): <a 
               href="https://www.instagram.com/yeti.snaps/" 
               target="_blank" 
               rel="noopener noreferrer"
