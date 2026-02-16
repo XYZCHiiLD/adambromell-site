@@ -67,7 +67,7 @@ export default function Home() {
           </p>
         </div>
 
-        <hr className="rule-header mb-12" />
+        <hr className="rule-section mb-12" />
 
         {/* System Era */}
         <section className="mb-12">
