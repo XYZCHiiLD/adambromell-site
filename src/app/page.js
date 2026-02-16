@@ -5,7 +5,7 @@ export default function Home() {
         
         {/* Header */}
         <header className="mb-12">
-          <h1 className="font-bold mb-1">adam bromell</h1>
+          <h1 className="font-bold mb-0">adam bromell</h1>
         </header>
 
         {/* About - no heading */}
