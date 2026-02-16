@@ -36,7 +36,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>
-              As CCO and co-founder of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>, I've led the studio's creative vision from inception through to our 2023 acquisition by Devolver Digital. I first began building games as a 3D artist in 2001, and have spent the last decade as Creative Director for System Era's most ambitious projects.
+              As co-founder, CCO, and longtime Creative Director of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>, I've steered the studio's vision from its earliest days to our 2023 acquisition by Devolver Digital. My journey in game development began as a 3D artist in 2001, eventually leading to a decade of directing the studio's most ambitious work.
             </p>
             <p>
               Outside of work, I have a passion for photography and product design.
@@ -51,6 +51,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">system era softworks</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
+              <p className="subheading">Company</p>
               <p>co-founded 2014</p>
               <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital, 2023</a></p>
             </div>
