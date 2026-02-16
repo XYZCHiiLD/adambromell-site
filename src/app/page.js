@@ -47,7 +47,10 @@ export default function Home() {
             <p>Creative Director.</p>
             <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
             <p>
-              In 2001, I dropped out of college to make games. I spent a decade as an artist in AAA before leaving that space in 2014 to build my own studio, System Era Softworks. I have since then spent my time leading the vision for our projects and navigating our 2023 acquisition by Devolver Digital. Today, I'm the Chief Creative Officer for the company and Creative Director for the studios most ambitious game yet.
+              In 2001, I dropped out of college to make games. I spent a decade as an artist in AAA before leaving that space in 2014 to build my own studio, System Era Softworks. I have since then spent my time leading the vision for our projects and navigating our 2023 acquisition by Devolver Digital.
+            </p>
+            <p>
+              Today, I'm the Chief Creative Officer for the company and Creative Director for the studios most ambitious game yet.
             </p>
             <p>
               Outside of my professional work, I indulge in a passion for photography and product design.
@@ -70,7 +73,7 @@ export default function Home() {
             <div className="mt-6">
               <p className="subheading">Astroneer</p>
               <p>base building survival sandbox</p>
-              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ambitious voxel technology</a></p>
+              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pioneering voxel technology</a></p>
               <p>14M+ players across all platforms</p>
               <p>#1 game on Steam weeks after early access launch</p>
             </div>
@@ -101,7 +104,7 @@ export default function Home() {
             <div>
               <p className="subheading">Polycount</p>
               <p>2006-2016</p>
-              <p>community & team manager<br />~10x community growth</p>
+              <p>community & engagement lead<br />10x community growth</p>
             </div>
 
             <div>
