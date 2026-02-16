@@ -9,7 +9,7 @@ export default function Home() {
         </header>
 
         {/* About - no heading */}
-        <section className="mb-12">
+        <section className="mb-12 -mt-2">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Creative Director.</p>
             <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
