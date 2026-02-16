@@ -47,10 +47,10 @@ export default function Home() {
             <p>Creative Director.</p>
             <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
             <p>
-              In 2001, I dropped out of college to make games. I spent a decade as an artist in AAA before leaving that space in 2014 to build my own studio, System Era Softworks. I have since then spent my time leading the vision for our projects and navigating our 2023 acquisition by Devolver Digital.
+              In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 to build System Era Softworks, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.
             </p>
             <p>
-              Today, I'm the Chief Creative Officer for the company and Creative Director for the studios most ambitious game yet.
+              Today, I serve as Chief Creative Officer for the company and Creative Director for the studio's most ambitious game yet.
             </p>
             <p>
               Outside of my professional work, I indulge in a passion for photography and product design.
