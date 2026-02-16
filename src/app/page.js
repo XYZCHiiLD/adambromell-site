@@ -50,8 +50,10 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="font-bold mb-4">system era softworks</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>co-founded 2014</p>
-            <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital, 2023</a></p>
+            <div>
+              <p>co-founded 2014</p>
+              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital, 2023</a></p>
+            </div>
             
             <div className="mt-6">
               <p className="subheading">Astroneer</p>
