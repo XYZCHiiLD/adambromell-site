@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="border-gray-300 mb-12" />
+        <hr className="rule-heavy mb-12" />
 
         {/* System Era */}
         <section className="mb-12">
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="border-gray-300 mb-12" />
+        <hr className="rule-heavy mb-12" />
 
         {/* Additional History */}
         <section className="mb-12">

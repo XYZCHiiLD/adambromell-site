@@ -16,11 +16,16 @@ h1 {
 }
 
 h2 {
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: 900;
 }
 
 .subheading {
   font-size: 10pt;
   font-weight: 900;
+}
+
+.rule-heavy {
+  border-width: 3px;
+  border-color: #000;
 }
