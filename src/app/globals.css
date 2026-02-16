@@ -25,7 +25,12 @@ h2 {
   font-weight: 900;
 }
 
-.rule-heavy {
-  border-width: 3px;
+.rule-header {
+  border-width: 4px;
   border-color: #000;
+}
+
+.rule-section {
+  border-width: 2px;
+  border-color: #808080;
 }
