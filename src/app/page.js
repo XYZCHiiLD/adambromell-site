@@ -1,48 +1,15 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-[600px] mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
         
         {/* Header */}
         <header className="mb-12">
           <h1 className="font-bold mb-4">adam bromell</h1>
-          <div className="flex gap-6">
-            <p>
-              threads: <a 
-                href="https://www.threads.net/@adambromell" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                @adambromell
-              </a>
-            </p>
-            <p>
-              bluesky: <a 
-                href="https://bsky.app/profile/adambromell.info" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                adambromell.info
-              </a>
-            </p>
-            <p>
-              email: <a 
-                href="mailto:adambromell@proton.me"
-                className="text-blue-600 hover:underline"
-              >
-                adambromell@proton.me
-              </a>
-            </p>
-          </div>
         </header>
 
-        <hr className="rule-header mb-12" />
-
-        {/* About */}
+        {/* About - no heading */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Creative Director.</p>
             <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
@@ -58,7 +25,49 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="rule-section mb-12" />
+        {/* Links */}
+        <div className="mb-12 flex gap-6">
+          <p>
+            threads: <a 
+              href="https://www.threads.net/@adambromell" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              @adambromell
+            </a>
+          </p>
+          <p>
+            bluesky: <a 
+              href="https://bsky.app/profile/adambromell.info" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              adambromell.info
+            </a>
+          </p>
+          <p>
+            instagram (photograph): <a 
+              href="https://www.instagram.com/yeti.snaps/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              @yeti.snaps
+            </a>
+          </p>
+          <p>
+            email: <a 
+              href="mailto:adambromell@proton.me"
+              className="text-blue-600 hover:underline"
+            >
+              adambromell@proton.me
+            </a>
+          </p>
+        </div>
+
+        <hr className="rule-header mb-12" />
 
         {/* System Era */}
         <section className="mb-12">
@@ -66,8 +75,8 @@ export default function Home() {
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
-              <p>co-founded 2014</p>
-              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital, 2023</a></p>
+              <p>co-founded in 2014</p>
+              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital in 2023</a></p>
             </div>
             
             <div className="mt-6">
