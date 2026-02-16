@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </header>
 
-        <hr className="border-gray-300 mb-12" />
+        <hr className="rule-heavy mb-12" />
 
         {/* About */}
         <section className="mb-12">
