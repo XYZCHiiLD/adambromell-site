@@ -6,26 +6,35 @@ export default function Home() {
         {/* Header */}
         <header className="mb-12">
           <h1 className="font-bold mb-4">adam bromell</h1>
-          <p className="mb-6">
-            Creative Director | CCO & Co-founder, System Era
-          </p>
           <div className="flex gap-6">
-            <a 
-              href="https://www.threads.net/@adambromell" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              threads: @adambromell
-            </a>
-            <a 
-              href="https://bsky.app/profile/adambromell.info" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              bluesky: adambromell.info
-            </a>
+            <p>
+              threads: <a 
+                href="https://www.threads.net/@adambromell" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                @adambromell
+              </a>
+            </p>
+            <p>
+              bluesky: <a 
+                href="https://bsky.app/profile/adambromell.info" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                adambromell.info
+              </a>
+            </p>
+            <p>
+              email: <a 
+                href="mailto:adambromell@proton.me"
+                className="text-blue-600 hover:underline"
+              >
+                adambromell@proton.me
+              </a>
+            </p>
           </div>
         </header>
 
@@ -36,7 +45,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Creative Director.</p>
-            <p>Co-founder of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
+            <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
             <p>
               In 2001, I dropped out of college to make games. I spent a decade as an artist in AAA before leaving that space in 2014 to build my own studio, System Era Softworks. I have since then spent my time leading the vision for our projects and navigating our 2023 acquisition by Devolver Digital. Today, I'm the Chief Creative Officer for the company and Creative Director for the studios most ambitious games yet.
             </p>
@@ -114,21 +123,6 @@ export default function Home() {
             </div>
 
           </div>
-        </section>
-
-        <hr className="border-gray-300 mb-12" />
-
-        {/* Contact */}
-        <section>
-          <h2 className="font-bold mb-4">contact</h2>
-          <a 
-            href="https://www.threads.net/@adambromell" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            dm on threads
-          </a>
         </section>
 
       </div>
