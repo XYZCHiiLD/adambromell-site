@@ -36,10 +36,14 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>
-              As co-founder, CCO, and longtime Creative Director of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>, I've steered the studio's vision from its earliest days to our 2023 acquisition by Devolver Digital. My journey in game development began as a 3D artist in 2001, eventually leading to a decade of directing the studio's most ambitious work.
+              Creative Director.<br />
+              Co-founder of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.
             </p>
             <p>
-              Outside of work, I have a passion for photography and product design.
+              In 2001, I dropped out of college to make games. I spent a decade as an artist in AAA before leaving that space in 2014 to build my own studio, System Era Softworks. I have since then spent my time leading the vision for our projects and navigating our 2023 acquisition by Devolver Digital. Today, I'm the Chief Creative Officer for the company and Creative Director for the studios most ambitious games yet.
+            </p>
+            <p>
+              Outside of my professional work, I indulge in a passion for photography and product design.
             </p>
           </div>
         </section>
