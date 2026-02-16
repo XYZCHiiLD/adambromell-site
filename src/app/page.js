@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-[452px] mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-[600px] mx-auto px-6 py-16 md:py-24">
         
         {/* Header */}
         <header className="mb-12">
