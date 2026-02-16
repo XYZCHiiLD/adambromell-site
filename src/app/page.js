@@ -58,6 +58,8 @@ export default function Home() {
           </div>
         </section>
 
+        <hr className="rule-section mb-12" />
+
         {/* System Era */}
         <section className="mb-12">
           <h2 className="font-bold mb-4">system era softworks</h2>
@@ -85,6 +87,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <hr className="rule-section mb-12" />
 
         {/* Additional History */}
         <section className="mb-12">
