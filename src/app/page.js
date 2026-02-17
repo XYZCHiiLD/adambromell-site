@@ -8,20 +8,20 @@ export default function Home() {
           <h1 className="font-bold mb-0">adam bromell</h1>
         </header>
 
-        {/* About - no heading */}
+        {/* Tagline */}
         <section className="mb-12">
+          <p className="text-gray-800 leading-relaxed">For me it's a mix of chasing light through a lens, studying G-Shock constraints, and wondering how a sandbox can turn strangers into best friends.</p>
+        </section>
+
+        <hr className="rule-section mb-12" />
+
+        {/* About */}
+        <section className="mb-12">
+          <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p className="font-bold">Creative Director // Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
-            <p>I have a passion for creating playful sandboxes and shared experiences. I make video games, friends, and mistakes.</p>
-            <p>
-              In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 to build System Era Softworks, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.
-            </p>
-            <p>
-              Today, I serve as Chief Creative Officer for the company and Creative Director for the studio's most ambitious game yet.
-            </p>
-            <p>
-              Outside of my professional work, I indulge in a passion for photography and product design.
-            </p>
+            <p>Hey, I'm Adam. In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 and co-founded <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a>, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.</p>
+            <p>Today, I serve as Chief Creative Officer for the company and Creative Director for the studio's most ambitious game yet.</p>
+            <p>Outside of my professional work, I'm curious about photography and product design.</p>
           </div>
         </section>
 
@@ -29,7 +29,7 @@ export default function Home() {
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">system era softworks</h2>
+          <h2 className="font-bold mb-4">systemera</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
@@ -100,45 +100,40 @@ export default function Home() {
         {/* Socials, Contact */}
         <section className="mb-12">
           <h2 className="font-bold mb-4">socials, contact</h2>
-          <div className="flex gap-6">
-            <p>
-              threads: <a 
-                href="https://www.threads.net/@adambromell" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                @adambromell
-              </a>
-            </p>
-            <p>
-              bluesky: <a 
-                href="https://bsky.app/profile/adambromell.info" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                adambromell.info
-              </a>
-            </p>
-            <p>
-              instagram (photography): <a 
-                href="https://www.instagram.com/yeti.snaps/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                @yeti.snaps
-              </a>
-            </p>
-            <p>
-              email: <a 
-                href="mailto:adambromell@proton.me"
-                className="text-blue-600 hover:underline"
-              >
-                adambromell@proton.me
-              </a>
-            </p>
+          <div className="space-y-4 text-gray-800 leading-relaxed">
+            <p>to reach out just add & DM me on</p>
+            <div className="flex gap-6">
+              <p>
+                threads: <a 
+                  href="https://www.threads.net/@adambromell" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  @adambromell
+                </a>
+              </p>
+              <p>
+                bluesky: <a 
+                  href="https://bsky.app/profile/adambromell.info" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  adambromell.info
+                </a>
+              </p>
+              <p>
+                instagram (photography): <a 
+                  href="https://www.instagram.com/yeti.snaps/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  @yeti.snaps
+                </a>
+              </p>
+            </div>
           </div>
         </section>
 
