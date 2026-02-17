@@ -25,6 +25,8 @@ export default function Home() {
           </div>
         </section>
 
+        <hr className="rule-subtle mb-12" />
+
         {/* Links */}
         <div className="mb-12 flex gap-6">
           <p>
