@@ -10,7 +10,7 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4">For me it's a mix of chasing light through a lens, studying G-Shock constraints, and wondering how a sandbox can turn strangers into best friends.</p>
+          <p className="text-gray-800 leading-relaxed mb-4">Wondering how a sandbox can turn strangers into best friends, studying G-Shock constraints, and pursuing light through a lens.</p>
           <div className="flex gap-6">
             <p>
               threads: <a 
@@ -51,7 +51,8 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>Hey, I'm Adam. In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 and co-founded <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a>, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.</p>
+            <p>Hey, I'm Adam.</p>
+            <p>In 2001, I dropped out of college to make games as an artist. After a decade in AAA game development, I left in 2014 and co-founded <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a>, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.</p>
             <p>Today, I serve as Chief Creative Officer for the company and Creative Director for the studio's most ambitious game yet.</p>
             <p>Outside of my professional work, I'm curious about photography and product design.</p>
           </div>
