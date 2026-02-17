@@ -10,7 +10,39 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed">For me it's a mix of chasing light through a lens, studying G-Shock constraints, and wondering how a sandbox can turn strangers into best friends.</p>
+          <p className="text-gray-800 leading-relaxed mb-4">For me it's a mix of chasing light through a lens, studying G-Shock constraints, and wondering how a sandbox can turn strangers into best friends.</p>
+          <div className="flex gap-6">
+            <p>
+              threads: <a 
+                href="https://www.threads.net/@adambromell" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                @adambromell
+              </a>
+            </p>
+            <p>
+              bluesky: <a 
+                href="https://bsky.app/profile/adambromell.info" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                adambromell.info
+              </a>
+            </p>
+            <p>
+              instagram (photography): <a 
+                href="https://www.instagram.com/yeti.snaps/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                @yeti.snaps
+              </a>
+            </p>
+          </div>
         </section>
 
         <hr className="rule-section mb-12" />
@@ -92,48 +124,6 @@ export default function Home() {
               <p>artist</p>
             </div>
 
-          </div>
-        </section>
-
-        <hr className="rule-section mb-12" />
-
-        {/* Socials, Contact */}
-        <section className="mb-12">
-          <h2 className="font-bold mb-4">socials, contact</h2>
-          <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>to reach out just add & DM me on</p>
-            <div className="flex gap-6">
-              <p>
-                threads: <a 
-                  href="https://www.threads.net/@adambromell" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  @adambromell
-                </a>
-              </p>
-              <p>
-                bluesky: <a 
-                  href="https://bsky.app/profile/adambromell.info" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  adambromell.info
-                </a>
-              </p>
-              <p>
-                instagram (photography): <a 
-                  href="https://www.instagram.com/yeti.snaps/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  @yeti.snaps
-                </a>
-              </p>
-            </div>
           </div>
         </section>
 
