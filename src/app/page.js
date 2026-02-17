@@ -52,7 +52,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
-            <p>In 2001, I dropped out of college to make games as an artist on "AAA" games. Over a decade in I left that world in 2014 and co-founded <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a> as the creator of Astroneer. I then lead the vision of our projects through to our 2023 acquisition by Devolver Digital.</p>
+            <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found System Era as the creator of Astroneer. We were acquired by Devolver Digital in 2023.</p>
             <p>Today, I serve as CCO of System Era and Creative Director for the studio's most ambitious game yet.</p>
             <p>Outside of my professional work, I'm curious about product design and photography.</p>
           </div>
