@@ -62,7 +62,7 @@ export default function Home() {
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">systemera</h2>
+          <h2 className="font-bold mb-4">system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
