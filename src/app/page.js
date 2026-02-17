@@ -25,50 +25,6 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="rule-subtle mb-12" />
-
-        {/* Links */}
-        <div className="mb-12 flex gap-6">
-          <p>
-            threads: <a 
-              href="https://www.threads.net/@adambromell" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              @adambromell
-            </a>
-          </p>
-          <p>
-            bluesky: <a 
-              href="https://bsky.app/profile/adambromell.info" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              adambromell.info
-            </a>
-          </p>
-          <p>
-            instagram (photography): <a 
-              href="https://www.instagram.com/yeti.snaps/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              @yeti.snaps
-            </a>
-          </p>
-          <p>
-            email: <a 
-              href="mailto:adambromell@proton.me"
-              className="text-blue-600 hover:underline"
-            >
-              adambromell@proton.me
-            </a>
-          </p>
-        </div>
-
         <hr className="rule-section mb-12" />
 
         {/* System Era */}
@@ -136,6 +92,53 @@ export default function Home() {
               <p>artist</p>
             </div>
 
+          </div>
+        </section>
+
+        <hr className="rule-section mb-12" />
+
+        {/* Socials, Contact */}
+        <section className="mb-12">
+          <h2 className="font-bold mb-4">socials, contact</h2>
+          <div className="flex gap-6">
+            <p>
+              threads: <a 
+                href="https://www.threads.net/@adambromell" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                @adambromell
+              </a>
+            </p>
+            <p>
+              bluesky: <a 
+                href="https://bsky.app/profile/adambromell.info" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                adambromell.info
+              </a>
+            </p>
+            <p>
+              instagram (photography): <a 
+                href="https://www.instagram.com/yeti.snaps/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                @yeti.snaps
+              </a>
+            </p>
+            <p>
+              email: <a 
+                href="mailto:adambromell@proton.me"
+                className="text-blue-600 hover:underline"
+              >
+                adambromell@proton.me
+              </a>
+            </p>
           </div>
         </section>
 
