@@ -4,12 +4,12 @@ export default function Home() {
       <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
         
         {/* Header */}
-        <header className="mb-12">
+        <header className="mb-4">
           <h1 className="font-bold mb-0">adam bromell</h1>
         </header>
 
         {/* About - no heading */}
-        <section className="mb-12 -mt-2">
+        <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Creative Director.</p>
             <p>Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
