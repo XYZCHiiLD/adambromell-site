@@ -4,7 +4,7 @@ export default function Home() {
       <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
         
         {/* Header */}
-        <header className="mb-0">
+        <header className="mb-4">
           <h1 className="font-bold mb-0">adam bromell</h1>
         </header>
 
@@ -12,14 +12,14 @@ export default function Home() {
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p className="font-bold">Creative Director // Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
-            <p className="italic">I'm a Creative Director with a passion for playful sandboxes and shared experiences. I make video games, friends, and mistakes.</p>
-            <p className="italic">
+            <p>I'm a Creative Director with a passion for playful sandboxes and shared experiences. I make video games, friends, and mistakes.</p>
+            <p>
               In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 to build System Era Softworks, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.
             </p>
-            <p className="italic">
+            <p>
               Today, I serve as Chief Creative Officer for the company and Creative Director for the studio's most ambitious game yet.
             </p>
-            <p className="italic">
+            <p>
               Outside of my professional work, I indulge in a passion for photography and product design.
             </p>
           </div>
