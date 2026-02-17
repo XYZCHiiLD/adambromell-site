@@ -12,7 +12,7 @@ export default function Home() {
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p className="font-bold">Creative Director // Co-founder & CCO of <a href="https://www.systemera.net" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era Softworks</a>.</p>
-            <p>I'm a Creative Director with a passion for playful sandboxes and shared experiences. I make video games, friends, and mistakes.</p>
+            <p>I have a passion for creating playful sandboxes and shared experiences. I make video games, friends, and mistakes.</p>
             <p>
               In 2001, I dropped out of college to make games as an artist. After a decade in AAA, I left in 2014 to build System Era Softworks, leading the vision for our projects through to our 2023 acquisition by Devolver Digital.
             </p>
