@@ -4,10 +4,22 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [bgColor, setBgColor] = useState('');
   const [scrollY, setScrollY] = useState(0);
+  const [selectedImage, setSelectedImage] = useState('');
 
   useEffect(() => {
     // Cloud Dancer background
     setBgColor('#F0EEE4'); // Pantone Cloud Dancer 11-4201 TCX
+    
+    // Randomly select an image
+    const images = [
+      '/photo-1.jpg',
+      '/photo-2.jpg',
+      '/photo-3.jpg',
+      '/photo-4.jpg',
+      '/photo-5.jpg',
+    ];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    setSelectedImage(randomImage);
   }, []);
 
   useEffect(() => {
@@ -42,8 +54,8 @@ export default function Home() {
           }}
         >
           <img 
-            src="/photo-1.jpg" 
-            alt="Mountain landscape with elk"
+            src={selectedImage} 
+            alt="Photography by Adam Bromell"
             style={{
               width: '100%',
               height: 'auto',
