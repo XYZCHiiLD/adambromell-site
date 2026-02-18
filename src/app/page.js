@@ -14,7 +14,7 @@ export default function Home() {
       {/* SVG noise filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="noiseFilter">
-          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="4" stitchTiles="stitch" />
           <feColorMatrix type="saturate" values="0" />
         </filter>
       </svg>
