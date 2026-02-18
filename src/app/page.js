@@ -2,12 +2,11 @@
 import { useState, useEffect } from 'react';
 
 export default function Home() {
-  const [colors, setColors] = useState([]);
+  const [bgColor, setBgColor] = useState('');
 
   useEffect(() => {
-    // Color palette
+    // Color palette for noise texture
     const palette = [
-      '#1F3B73', // Deep Blue
       '#C5003E', // Ribbon Red
       '#B5CE00', // Piquant Green
       '#E8D7B0', // Flax
@@ -15,23 +14,53 @@ export default function Home() {
       '#94C5CC', // Allure
     ];
     
-    // Shuffle and pick first 4 colors
-    const shuffled = [...palette].sort(() => Math.random() - 0.5);
-    setColors(shuffled.slice(0, 4));
+    // Pick random color for background
+    const randomColor = palette[Math.floor(Math.random() * palette.length)];
+    setBgColor(randomColor);
   }, []);
 
   return (
     <main className="min-h-screen bg-white">
-      <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
+      {/* SVG noise filter */}
+      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+        <filter id="noiseFilter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+      </svg>
+      
+      <div 
+        className="max-w-2xl mx-auto px-6 py-16 md:py-24"
+        style={{
+          position: 'relative',
+          backgroundColor: bgColor,
+        }}
+      >
+        {/* Noise overlay */}
+        <div 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            filter: 'url(#noiseFilter)',
+            opacity: 0.15,
+            pointerEvents: 'none',
+          }}
+        />
+        
+        {/* Content with relative positioning to be above noise */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
         
         {/* Header */}
         <header className="mb-4">
-          <h1 className="font-bold mb-0" style={{ color: colors[0] || '#000' }}>adam bromell</h1>
+          <h1 className="font-bold mb-0">adam bromell</h1>
         </header>
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '24px' }}>
+          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '29px' }}>
             WONDERING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
           </p>
           <div className="flex gap-6">
@@ -68,7 +97,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="mb-12" style={{ borderColor: colors[1] || '#f2f2f2', borderWidth: '0.5px' }} />
+        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
 
         {/* About */}
         <section className="mb-12">
@@ -81,7 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="mb-12" style={{ borderColor: colors[2] || '#f2f2f2', borderWidth: '0.5px' }} />
+        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
 
         {/* System Era */}
         <section className="mb-12">
@@ -111,7 +140,7 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="mb-12" style={{ borderColor: colors[3] || '#f2f2f2', borderWidth: '0.5px' }} />
+        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
 
         {/* Additional History */}
         <section className="mb-12">
@@ -151,6 +180,7 @@ export default function Home() {
           </div>
         </section>
 
+        </div>
       </div>
     </main>
   )
