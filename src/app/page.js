@@ -28,26 +28,11 @@ export default function Home() {
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>HERE'S SOME RAPID FIRE TRUTHS ABOUT ME AND THINGS I BELIEVE.</p>
-            <div className="flex gap-2">
-              <span>—</span>
-              <p className="flex-1">DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
-            </div>
-            <div className="flex gap-2">
-              <span>—</span>
-              <p className="flex-1">CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
-            </div>
-            <div className="flex gap-2">
-              <span>—</span>
-              <p className="flex-1">I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS AND FEEL THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
-            </div>
-            <div className="flex gap-2">
-              <span>—</span>
-              <p className="flex-1">PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
-            </div>
-            <div className="flex gap-2">
-              <span>—</span>
-              <p className="flex-1">VALUE IS PERCEIVED, NOT INHERENT.</p>
-            </div>
+            <p>DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
+            <p>CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
+            <p>I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS AND FEEL THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
+            <p>PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
+            <p>VALUE IS PERCEIVED, NOT INHERENT.</p>
           </div>
 
           {/* Social links */}
@@ -96,54 +81,24 @@ export default function Home() {
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">COMPANY</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">co-founded in 2014</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1"><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>acquired by DEVOLVER DIGITAL in 2023</a></p>
-              </div>
+              <p>co-founded in 2014</p>
+              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>acquired by DEVOLVER DIGITAL in 2023</a></p>
             </div>
             
             <div className="mt-6">
               <p className="subheading">ASTRONEER</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">base building survival sandbox</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1"><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>pioneering voxel technology</a></p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">14M+ players across all platforms</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">#1 game on STEAM weeks after early access launch</p>
-              </div>
+              <p>base building survival sandbox</p>
+              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>pioneering voxel technology</a></p>
+              <p>14M+ players across all platforms</p>
+              <p>#1 game on STEAM weeks after early access launch</p>
             </div>
 
             <div className="mt-6">
               <p className="subheading">STARSEEKER: ASTRONEER EXPEDITIONS</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">massively co-operative expeditions</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">40+ player space station hub</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1"><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>ethical, sustainable "live service"</a></p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">releasing 2026</p>
-              </div>
+              <p>massively co-operative expeditions</p>
+              <p>40+ player space station hub</p>
+              <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>ethical, sustainable "live service"</a></p>
+              <p>releasing 2026</p>
             </div>
           </div>
         </section>
@@ -157,68 +112,32 @@ export default function Home() {
             
             <div>
               <p className="subheading">UBISOFT</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">2011-2016</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">assistant art director, lead artist, artist</p>
-              </div>
+              <p>2011-2016</p>
+              <p>assistant art director, lead artist, artist</p>
             </div>
 
             <div>
               <p className="subheading">POLYCOUNT</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">2006-2016</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <div className="flex-1">
-                  <p>community & engagement lead</p>
-                  <div className="flex gap-2">
-                    <span>—</span>
-                    <p className="flex-1">10x community growth</p>
-                  </div>
-                </div>
-              </div>
+              <p>2006-2016</p>
+              <p>community & engagement lead<br />10x community growth</p>
             </div>
 
             <div>
               <p className="subheading">RELIC ENTERTAINMENT</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">2009-2011</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">artist</p>
-              </div>
+              <p>2009-2011</p>
+              <p>artist</p>
             </div>
 
             <div>
               <p className="subheading">THREEWAVE SOFTWARE</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">2005-2009</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">artist</p>
-              </div>
+              <p>2005-2009</p>
+              <p>artist</p>
             </div>
 
             <div>
               <p className="subheading">Freelance</p>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">2001-2005</p>
-              </div>
-              <div className="flex gap-2">
-                <span>—</span>
-                <p className="flex-1">artist</p>
-              </div>
+              <p>2001-2005</p>
+              <p>artist</p>
             </div>
 
           </div>
