@@ -31,7 +31,9 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '24px' }}>Wondering how a sandbox can turn STRANGERS into FRIENDS, studying G-SHOCK CONSTRAINTS, and pursuing LIGHT through a LENS.</p>
+          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '24px' }}>
+            WONDERING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
+          </p>
           <div className="flex gap-6">
             <p>
               bluesky: <a 
@@ -86,7 +88,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
-              <p className="subheading">Company</p>
+              <p className="subheading">COMPANY</p>
               <p>co-founded in 2014</p>
               <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by DEVOLVER DIGITAL in 2023</a></p>
             </div>
