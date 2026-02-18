@@ -66,11 +66,9 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="rule-section mb-12" />
-
         {/* About */}
-        <section className="mb-12">
-          <h2 className="font-bold mb-4" style={{ color: colors[1] || '#000' }}>about</h2>
+        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+          <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
             <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a> as the creator of Astroneer. We were acquired by Devolver Digital in 2023.</p>
@@ -79,11 +77,9 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="rule-section mb-12" />
-
         {/* System Era */}
-        <section className="mb-12">
-          <h2 className="font-bold mb-4" style={{ color: colors[2] || '#000' }}>system era</h2>
+        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+          <h2 className="font-bold mb-4">system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
@@ -109,11 +105,9 @@ export default function Home() {
           </div>
         </section>
 
-        <hr className="rule-section mb-12" />
-
         {/* Additional History */}
-        <section className="mb-12">
-          <h2 className="font-bold mb-4" style={{ color: colors[3] || '#000' }}>additional history</h2>
+        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+          <h2 className="font-bold mb-4">additional history</h2>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
             <div>
