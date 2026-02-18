@@ -10,7 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen" style={{ backgroundColor: '#F0EEE4' }}>
       {/* SVG noise filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="noiseFilter">
@@ -18,32 +18,31 @@ export default function Home() {
           <feColorMatrix type="saturate" values="0" />
         </filter>
       </svg>
+
+      {/* Full-page noise overlay */}
+      <div 
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: '100%',
+          height: '100%',
+          filter: 'url(#noiseFilter)',
+          opacity: 0.4,
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      />
       
       <div 
-        className="max-w-3xl mx-auto px-6 py-16 md:py-24 min-h-screen"
+        className="max-w-3xl mx-auto px-6 py-16 md:py-24"
         style={{
           position: 'relative',
-          backgroundColor: '#F0EEE4',
+          zIndex: 1,
         }}
       >
-        {/* Noise overlay */}
-        <div 
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            width: '100%',
-            height: '100%',
-            filter: 'url(#noiseFilter)',
-            opacity: 0.4,
-            pointerEvents: 'none',
-          }}
-        />
-        
-        {/* Content with relative positioning to be above noise */}
-        <div style={{ position: 'relative', zIndex: 1 }}>
         
         {/* Header */}
         <header className="mb-4">
@@ -61,7 +60,8 @@ export default function Home() {
                 href="https://bsky.app/profile/adambromell.info" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="hover:underline"
+                style={{ color: '#C5003E' }}
               >
                 adambromell.info
               </a>
@@ -71,7 +71,8 @@ export default function Home() {
                 href="https://www.threads.net/@adambromell" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="hover:underline"
+                style={{ color: '#C5003E' }}
               >
                 @adambromell
               </a>
@@ -81,7 +82,8 @@ export default function Home() {
                 href="https://www.instagram.com/yeti.snaps/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="hover:underline"
+                style={{ color: '#C5003E' }}
               >
                 @yeti.snaps
               </a>
@@ -96,7 +98,7 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>HEY, I'M ADAM.</p>
-            <p>IN 2001, I DROPPED OUT OF COLLEGE TO MAKE GAMES AS A 3D ARTIST. AFTER A DECADE IN AAA, I LEFT IN 2014 TO CO-FOUND <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold">SYSTEM ERA</a> AS THE CREATOR OF <strong>ASTRONEER</strong>. WE WERE ACQUIRED BY <strong>DEVOLVER DIGITAL</strong> IN 2023.</p>
+            <p>IN 2001, I DROPPED OUT OF COLLEGE TO MAKE GAMES AS A 3D ARTIST. AFTER A DECADE IN AAA, I LEFT IN 2014 TO CO-FOUND <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a> AS THE CREATOR OF <strong>ASTRONEER</strong>. WE WERE ACQUIRED BY <strong>DEVOLVER DIGITAL</strong> IN 2023.</p>
             <p>TODAY, I SERVE AS CCO OF <strong>SYSTEM ERA</strong> AND CREATIVE DIRECTOR FOR THE STUDIO'S MOST AMBITIOUS GAME YET.</p>
             <p>OUTSIDE OF MY PROFESSIONAL WORK, I'M CURIOUS ABOUT PRODUCT DESIGN AND PHOTOGRAPHY.</p>
           </div>
@@ -111,13 +113,13 @@ export default function Home() {
             <div>
               <p className="subheading">COMPANY</p>
               <p>co-founded in 2014</p>
-              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by DEVOLVER DIGITAL in 2023</a></p>
+              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>acquired by DEVOLVER DIGITAL in 2023</a></p>
             </div>
             
             <div className="mt-6">
               <p className="subheading">ASTRONEER</p>
               <p>base building survival sandbox</p>
-              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pioneering voxel technology</a></p>
+              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>pioneering voxel technology</a></p>
               <p>14M+ players across all platforms</p>
               <p>#1 game on STEAM weeks after early access launch</p>
             </div>
@@ -126,7 +128,7 @@ export default function Home() {
               <p className="subheading">STARSEEKER: ASTRONEER EXPEDITIONS</p>
               <p>massively co-operative expeditions</p>
               <p>40+ player space station hub</p>
-              <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ethical, sustainable "live service"</a></p>
+              <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>ethical, sustainable "live service"</a></p>
               <p>releasing 2026</p>
             </div>
           </div>
@@ -172,7 +174,6 @@ export default function Home() {
           </div>
         </section>
 
-        </div>
       </div>
     </main>
   )
