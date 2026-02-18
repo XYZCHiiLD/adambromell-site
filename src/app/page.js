@@ -48,7 +48,7 @@ export default function Home() {
               width: '100%',
               height: 'auto',
               position: 'absolute',
-              bottom: 0,
+              bottom: '-85px',
               left: 0,
               transform: `translateY(${scrollY * 0.5}px)`,
               transition: 'transform 0.1s ease-out',
