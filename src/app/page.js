@@ -21,15 +21,22 @@ export default function Home() {
         
         {/* Header */}
         <header className="mb-4">
-          <h1 className="font-bold mb-0">adam bromell</h1>
+          <h1 className="font-bold mb-0">HI, I'M ADAM.</h1>
         </header>
 
-        {/* Tagline */}
+        {/* About - moved up, using same formatting */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '18px' }}>
-            EXPLORING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
-          </p>
-          <div className="flex gap-6">
+          <div className="space-y-4 text-gray-800 leading-relaxed" style={{ fontSize: '18px' }}>
+            <p>HERE'S SOME RAPID FIRE TRUTHS ABOUT ME AND THINGS I BELIEVE.</p>
+            <p>DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
+            <p>CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
+            <p>I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS. THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
+            <p>PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
+            <p>VALUE IS PERCEIVED, NOT INHERENT.</p>
+          </div>
+
+          {/* Social links */}
+          <div className="flex gap-6 mt-4">
             <p>
               bluesky: <a 
                 href="https://bsky.app/profile/adambromell.info" 
@@ -63,21 +70,6 @@ export default function Home() {
                 @yeti.snaps
               </a>
             </p>
-          </div>
-        </section>
-
-        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
-
-        {/* About */}
-        <section className="mb-12">
-          <h2 className="font-bold mb-4">about</h2>
-          <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>HI, I'M ADAM. HERE'S SOME RAPID FIRE TRUTHS AND THINGS I BELIEVE.</p>
-            <p>DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
-            <p>CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
-            <p>I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS. THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
-            <p>PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
-            <p>VALUE IS PERCEIVED, NOT INHERENT.</p>
           </div>
         </section>
 
