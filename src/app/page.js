@@ -66,8 +66,10 @@ export default function Home() {
           </div>
         </section>
 
+        <hr className="mb-12" style={{ borderColor: colors[1] || '#f2f2f2', borderWidth: '0.5px' }} />
+
         {/* About */}
-        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+        <section className="mb-12">
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
@@ -77,8 +79,10 @@ export default function Home() {
           </div>
         </section>
 
+        <hr className="mb-12" style={{ borderColor: colors[2] || '#f2f2f2', borderWidth: '0.5px' }} />
+
         {/* System Era */}
-        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+        <section className="mb-12">
           <h2 className="font-bold mb-4">system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
@@ -105,8 +109,10 @@ export default function Home() {
           </div>
         </section>
 
+        <hr className="mb-12" style={{ borderColor: colors[3] || '#f2f2f2', borderWidth: '0.5px' }} />
+
         {/* Additional History */}
-        <section className="mb-12 p-6" style={{ backgroundColor: '#f2f2f2' }}>
+        <section className="mb-12">
           <h2 className="font-bold mb-4">additional history</h2>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
