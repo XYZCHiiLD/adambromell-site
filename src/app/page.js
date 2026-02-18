@@ -10,37 +10,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#F0EEE4' }}>
-      {/* SVG noise filter */}
-      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
-        <filter id="noiseFilter">
-          <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="4" stitchTiles="stitch" />
-          <feColorMatrix type="saturate" values="0" />
-        </filter>
-      </svg>
-
-      {/* Full-page noise overlay */}
+    <main className="min-h-screen bg-white">
       <div 
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          width: '100%',
-          height: '100%',
-          filter: 'url(#noiseFilter)',
-          opacity: 0.4,
-          pointerEvents: 'none',
-          zIndex: 0,
-        }}
-      />
-      
-      <div 
-        className="max-w-3xl mx-auto px-6 py-16 md:py-24"
+        className="max-w-3xl mx-auto px-6 py-16 md:py-24 min-h-screen"
         style={{
           position: 'relative',
-          zIndex: 1,
+          backgroundColor: '#F0EEE4',
         }}
       >
         
@@ -51,7 +26,7 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '23px' }}>
+          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '18px' }}>
             EXPLORING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
           </p>
           <div className="flex gap-6">
