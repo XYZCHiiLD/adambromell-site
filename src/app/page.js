@@ -10,7 +10,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen" style={{ backgroundColor: '#F0EEE4' }}>
+    <main className="min-h-screen bg-white">
       {/* SVG noise filter */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="noiseFilter">
