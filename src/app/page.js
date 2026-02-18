@@ -72,10 +72,12 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>HEY, I'M ADAM.</p>
-            <p>IN 2001, I DROPPED OUT OF COLLEGE TO MAKE GAMES AS A 3D ARTIST. AFTER A DECADE IN AAA, I LEFT IN 2014 TO CO-FOUND <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a> AS THE CREATOR OF <strong>ASTRONEER</strong>. WE WERE ACQUIRED BY <strong>DEVOLVER DIGITAL</strong> IN 2023.</p>
-            <p>TODAY, I SERVE AS CCO OF <strong>SYSTEM ERA</strong> AND CREATIVE DIRECTOR FOR THE STUDIO'S MOST AMBITIOUS GAME YET.</p>
-            <p>OUTSIDE OF MY PROFESSIONAL WORK, I'M CURIOUS ABOUT PRODUCT DESIGN AND PHOTOGRAPHY.</p>
+            <p>HI, I'M ADAM. HERE'S SOME RAPID FIRE TRUTHS AND THINGS I BELIEVE.</p>
+            <p>DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
+            <p>CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
+            <p>I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS. THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
+            <p>PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
+            <p>VALUE IS PERCEIVED, NOT INHERENT.</p>
           </div>
         </section>
 
