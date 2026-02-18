@@ -74,10 +74,10 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>Hey, I'm Adam.</p>
-            <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SYSTEM ERA</a> as the creator of ASTRONEER. We were acquired by DEVOLVER DIGITAL in 2023.</p>
-            <p>Today, I serve as CCO of SYSTEM ERA and Creative Director for the studio's most ambitious game yet.</p>
-            <p>Outside of my professional work, I'm curious about product design and photography.</p>
+            <p className="font-bold">Hey, I'm Adam.</p>
+            <p className="font-bold">In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SYSTEM ERA</a> as the creator of ASTRONEER. We were acquired by DEVOLVER DIGITAL in 2023.</p>
+            <p className="font-bold">Today, I serve as CCO of SYSTEM ERA and Creative Director for the studio's most ambitious game yet.</p>
+            <p className="font-bold">Outside of my professional work, I'm curious about product design and photography.</p>
           </div>
         </section>
 
