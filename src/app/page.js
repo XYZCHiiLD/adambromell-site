@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4">Wondering how a sandbox can turn strangers into best friends, studying G-Shock constraints, and pursuing light through a lens.</p>
+          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '24px' }}>Wondering how a sandbox can turn STRANGERS into FRIENDS, studying G-SHOCK CONSTRAINTS, and pursuing LIGHT through a LENS.</p>
           <div className="flex gap-6">
             <p>
               bluesky: <a 
