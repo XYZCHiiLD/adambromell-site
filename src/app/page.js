@@ -32,12 +32,11 @@ export default function Home() {
         {/* Parallax Image */}
         <div 
           style={{ 
-            width: '100%',
+            width: 'calc(100% + 96px)',
             height: '256px',
             overflow: 'hidden',
             position: 'relative',
             marginLeft: '-48px',
-            marginRight: '-48px',
             marginTop: '-64px',
             marginBottom: '48px',
           }}
