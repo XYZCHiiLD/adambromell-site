@@ -18,7 +18,7 @@
 
 body {
   font-family: 'TAYBirdie', Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,19 +26,19 @@ body {
 
 h1 {
   font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
-  font-size: 54px;
+  font-size: 49px;
   font-weight: 700;
   line-height: 1;
 }
 
 h2 {
   font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 700;
 }
 
 .subheading {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 900;
 }
 

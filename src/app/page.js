@@ -20,10 +20,10 @@ export default function Home() {
       </svg>
       
       <div 
-        className="max-w-2xl mx-auto px-6 py-16 md:py-24"
+        className="max-w-3xl mx-auto px-6 py-16 md:py-24 min-h-screen"
         style={{
           position: 'relative',
-          backgroundColor: bgColor,
+          backgroundColor: '#F0EEE4',
         }}
       >
         {/* Noise overlay */}
@@ -34,6 +34,8 @@ export default function Home() {
             left: 0,
             right: 0,
             bottom: 0,
+            width: '100%',
+            height: '100%',
             filter: 'url(#noiseFilter)',
             opacity: 0.4,
             pointerEvents: 'none',
@@ -50,7 +52,7 @@ export default function Home() {
 
         {/* Tagline */}
         <section className="mb-12">
-          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '26px' }}>
+          <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '23px' }}>
             WONDERING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
           </p>
           <div className="flex gap-6">
