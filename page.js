@@ -4,25 +4,25 @@
 
 body {
   font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
-  font-size: 10pt;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  font-size: 18pt;
-  font-weight: 900;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1;
 }
 
 h2 {
-  font-size: 14pt;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .subheading {
-  font-size: 10pt;
+  font-size: 14px;
   font-weight: 900;
 }
 
