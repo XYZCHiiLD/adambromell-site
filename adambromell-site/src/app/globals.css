@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'TAYBigBird';
+  src: url('/fonts/TAYBigBirdRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TAYBirdie';
+  src: url('/fonts/TAYBirdieRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'TAYBirdie', Georgia, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.rule-header {
+  border-width: 1px;
+  border-color: #000;
+}
+
+.rule-section {
+  border-width: 0.5px;
+  border-color: #f2f2f2;
+}
+
+.rule-subtle {
+  border-width: 0.5px;
+  border-color: #fafafa;
+}
