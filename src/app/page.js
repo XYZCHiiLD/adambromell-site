@@ -52,7 +52,7 @@ export default function Home() {
         {/* Tagline */}
         <section className="mb-12">
           <p className="text-gray-800 leading-relaxed mb-4" style={{ fontSize: '23px' }}>
-            WONDERING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
+            EXPLORING HOW A SANDBOX CAN TURN <strong>STRANGERS</strong> INTO <strong>FRIENDS</strong>, STUDYING <strong>G-SHOCK CONSTRAINTS</strong>, AND PURSUING <strong>LIGHT</strong> THROUGH A <strong>LENS</strong>.
           </p>
           <div className="flex gap-6">
             <p>
