@@ -3,10 +3,21 @@ import { useState, useEffect } from 'react';
 
 export default function Home() {
   const [bgColor, setBgColor] = useState('');
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     // Cloud Dancer background
     setBgColor('#F0EEE4'); // Pantone Cloud Dancer 11-4201 TCX
+  }, []);
+
+  useEffect(() => {
+    // Handle scroll for parallax effect
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -18,6 +29,33 @@ export default function Home() {
           backgroundColor: '#F0EEE4',
         }}
       >
+        {/* Parallax Image */}
+        <div 
+          style={{ 
+            width: '100%',
+            height: '256px',
+            overflow: 'hidden',
+            position: 'relative',
+            marginLeft: '-48px',
+            marginRight: '-48px',
+            marginTop: '-64px',
+            marginBottom: '48px',
+          }}
+        >
+          <img 
+            src="/photo-1.jpg" 
+            alt="Mountain landscape with elk"
+            style={{
+              width: '100%',
+              height: 'auto',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              transform: `translateY(${scrollY * 0.5}px)`,
+              transition: 'transform 0.1s ease-out',
+            }}
+          />
+        </div>
         
         {/* Header */}
         <header className="mb-4">
