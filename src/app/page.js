@@ -1,11 +1,32 @@
+'use client';
+import { useState, useEffect } from 'react';
+
 export default function Home() {
+  const [colors, setColors] = useState([]);
+
+  useEffect(() => {
+    // Color palette
+    const palette = [
+      '#1F3B73', // Deep Blue
+      '#C5003E', // Ribbon Red
+      '#B5CE00', // Piquant Green
+      '#E8D7B0', // Flax
+      '#D89B6A', // Sandstorm
+      '#94C5CC', // Allure
+    ];
+    
+    // Shuffle and pick first 4 colors
+    const shuffled = [...palette].sort(() => Math.random() - 0.5);
+    setColors(shuffled.slice(0, 4));
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-6 py-16 md:py-24">
         
         {/* Header */}
         <header className="mb-4">
-          <h1 className="font-bold mb-0">adam bromell</h1>
+          <h1 className="font-bold mb-0 pt-12 pb-1 pl-4" style={{ backgroundColor: colors[0] || 'transparent' }}>adam bromell</h1>
         </header>
 
         {/* Tagline */}
@@ -49,7 +70,7 @@ export default function Home() {
 
         {/* About */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">about</h2>
+          <h2 className="font-bold mb-4 pt-8 pb-1 pl-4" style={{ backgroundColor: colors[1] || 'transparent' }}>about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
             <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a> as the creator of Astroneer. We were acquired by Devolver Digital in 2023.</p>
@@ -62,7 +83,7 @@ export default function Home() {
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">system era</h2>
+          <h2 className="font-bold mb-4 pt-8 pb-1 pl-4" style={{ backgroundColor: colors[2] || 'transparent' }}>system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
@@ -92,7 +113,7 @@ export default function Home() {
 
         {/* Additional History */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">additional history</h2>
+          <h2 className="font-bold mb-4 pt-8 pb-1 pl-4" style={{ backgroundColor: colors[3] || 'transparent' }}>additional history</h2>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
             <div>
