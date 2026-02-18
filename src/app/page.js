@@ -37,7 +37,7 @@ export default function Home() {
             overflow: 'hidden',
             position: 'relative',
             marginLeft: '-48px',
-            marginTop: '-64px',
+            marginTop: '-96px',
             marginBottom: '48px',
           }}
         >
@@ -48,7 +48,7 @@ export default function Home() {
               width: '100%',
               height: 'auto',
               position: 'absolute',
-              top: 0,
+              bottom: 0,
               left: 0,
               transform: `translateY(${scrollY * 0.5}px)`,
               transition: 'transform 0.1s ease-out',
