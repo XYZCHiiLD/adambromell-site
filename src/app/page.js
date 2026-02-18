@@ -5,18 +5,8 @@ export default function Home() {
   const [bgColor, setBgColor] = useState('');
 
   useEffect(() => {
-    // Color palette for noise texture
-    const palette = [
-      '#C5003E', // Ribbon Red
-      '#B5CE00', // Piquant Green
-      '#E8D7B0', // Flax
-      '#D89B6A', // Sandstorm
-      '#94C5CC', // Allure
-    ];
-    
-    // Pick random color for background
-    const randomColor = palette[Math.floor(Math.random() * palette.length)];
-    setBgColor(randomColor);
+    // Cloud Dancer background
+    setBgColor('#F0EEE4'); // Pantone Cloud Dancer 11-4201 TCX
   }, []);
 
   return (
@@ -45,7 +35,7 @@ export default function Home() {
             right: 0,
             bottom: 0,
             filter: 'url(#noiseFilter)',
-            opacity: 0.15,
+            opacity: 0.4,
             pointerEvents: 'none',
           }}
         />
