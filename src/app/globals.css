@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'TAYBigBird';
+  src: url('/fonts/TAYBigBirdRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TAYBirdie';
+  src: url('/fonts/TAYBirdieRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'TAYBirdie', Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
@@ -11,12 +25,14 @@ body {
 }
 
 h1 {
+  font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 1;
 }
 
 h2 {
+  font-family: 'TAYBigBird', Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
   font-weight: 700;
 }

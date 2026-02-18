@@ -73,8 +73,8 @@ export default function Home() {
           <h2 className="font-bold mb-4">about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
-            <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a> as the creator of Astroneer. We were acquired by Devolver Digital in 2023.</p>
-            <p>Today, I serve as CCO of System Era and Creative Director for the studio's most ambitious game yet.</p>
+            <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">SYSTEM ERA</a> as the creator of ASTRONEER. We were acquired by DEVOLVER DIGITAL in 2023.</p>
+            <p>Today, I serve as CCO of SYSTEM ERA and Creative Director for the studio's most ambitious game yet.</p>
             <p>Outside of my professional work, I'm curious about product design and photography.</p>
           </div>
         </section>
@@ -88,19 +88,19 @@ export default function Home() {
             <div>
               <p className="subheading">Company</p>
               <p>co-founded in 2014</p>
-              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by Devolver Digital in 2023</a></p>
+              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">acquired by DEVOLVER DIGITAL in 2023</a></p>
             </div>
             
             <div className="mt-6">
-              <p className="subheading">Astroneer</p>
+              <p className="subheading">ASTRONEER</p>
               <p>base building survival sandbox</p>
               <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">pioneering voxel technology</a></p>
               <p>14M+ players across all platforms</p>
-              <p>#1 game on Steam weeks after early access launch</p>
+              <p>#1 game on STEAM weeks after early access launch</p>
             </div>
 
             <div className="mt-6">
-              <p className="subheading">Starseeker: Astroneer Expeditions</p>
+              <p className="subheading">STARSEEKER: ASTRONEER EXPEDITIONS</p>
               <p>massively co-operative expeditions</p>
               <p>40+ player space station hub</p>
               <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ethical, sustainable "live service"</a></p>
@@ -117,25 +117,25 @@ export default function Home() {
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
             <div>
-              <p className="subheading">Ubisoft</p>
+              <p className="subheading">UBISOFT</p>
               <p>2011-2016</p>
               <p>assistant art director, lead artist, artist</p>
             </div>
 
             <div>
-              <p className="subheading">Polycount</p>
+              <p className="subheading">POLYCOUNT</p>
               <p>2006-2016</p>
               <p>community & engagement lead<br />10x community growth</p>
             </div>
 
             <div>
-              <p className="subheading">Relic Entertainment</p>
+              <p className="subheading">RELIC ENTERTAINMENT</p>
               <p>2009-2011</p>
               <p>artist</p>
             </div>
 
             <div>
-              <p className="subheading">Threewave Software</p>
+              <p className="subheading">THREEWAVE SOFTWARE</p>
               <p>2005-2009</p>
               <p>artist</p>
             </div>
