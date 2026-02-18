@@ -4,23 +4,6 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [colors, setColors] = useState([]);
 
-  // Determine if text should be white or black based on background color
-  const getTextColor = (bgColor) => {
-    if (!bgColor || bgColor === 'transparent') return '#000';
-    
-    // Convert hex to RGB
-    const hex = bgColor.replace('#', '');
-    const r = parseInt(hex.substr(0, 2), 16);
-    const g = parseInt(hex.substr(2, 2), 16);
-    const b = parseInt(hex.substr(4, 2), 16);
-    
-    // Calculate luminance
-    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-    
-    // Return white for dark backgrounds, black for light
-    return luminance > 0.5 ? '#000' : '#fff';
-  };
-
   useEffect(() => {
     // Color palette
     const palette = [
@@ -43,7 +26,7 @@ export default function Home() {
         
         {/* Header */}
         <header className="mb-4">
-          <h1 className="font-bold mb-0 pt-12 pb-1" style={{ backgroundColor: colors[0] || 'transparent', color: getTextColor(colors[0]) }}>adam bromell</h1>
+          <h1 className="font-bold mb-0" style={{ color: colors[0] || '#000' }}>adam bromell</h1>
         </header>
 
         {/* Tagline */}
@@ -87,7 +70,7 @@ export default function Home() {
 
         {/* About */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4 pt-8 pb-1" style={{ backgroundColor: colors[1] || 'transparent', color: getTextColor(colors[1]) }}>about</h2>
+          <h2 className="font-bold mb-4" style={{ color: colors[1] || '#000' }}>about</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>Hey, I'm Adam.</p>
             <p>In 2001, I dropped out of college to make games as a 3D artist. After a decade in AAA, I left in 2014 to co-found <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">System Era</a> as the creator of Astroneer. We were acquired by Devolver Digital in 2023.</p>
@@ -100,7 +83,7 @@ export default function Home() {
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4 pt-8 pb-1" style={{ backgroundColor: colors[2] || 'transparent', color: getTextColor(colors[2]) }}>system era</h2>
+          <h2 className="font-bold mb-4" style={{ color: colors[2] || '#000' }}>system era</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <div>
               <p className="subheading">Company</p>
@@ -130,7 +113,7 @@ export default function Home() {
 
         {/* Additional History */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4 pt-8 pb-1" style={{ backgroundColor: colors[3] || 'transparent', color: getTextColor(colors[3]) }}>additional history</h2>
+          <h2 className="font-bold mb-4" style={{ color: colors[3] || '#000' }}>additional history</h2>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
             <div>
