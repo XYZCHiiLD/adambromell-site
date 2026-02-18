@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* About - moved up, using same formatting */}
         <section className="mb-12">
-          <div className="space-y-4 text-gray-800 leading-relaxed" style={{ fontSize: '18px' }}>
+          <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>HERE'S SOME RAPID FIRE TRUTHS ABOUT ME AND THINGS I BELIEVE.</p>
             <p>DROPPED OUT OF COLLEGE IN 2001 AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
             <p>CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>. CREATED <strong>ASTRONEER</strong>.</p>
