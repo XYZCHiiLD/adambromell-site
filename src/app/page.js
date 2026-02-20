@@ -79,7 +79,8 @@ export default function Home() {
             <p>I BUILD SANDBOXES THAT FOSTER FRIENDSHIPS.</p>
             <p>I MAKE SPACES FOR STANDING SHOULDER-TO-SHOULDER, NOT FACE-TO-FACE.</p>
             <p>I CREATE KNOWING THAT VALUE IS PERCEIVED AND NOT INHERENT.</p>
-            <p>I CO-FOUND <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a> AND CREATED <strong>ASTRONEER</strong>.</p>
+            <p>I AM CO-FOUNDER & CREATIVE DIRECTOR OF <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>.</p>
+            <p>I FIND IT HARD TO SAY "I CREATED" <strong>ASTRONEER</strong> BUT I DO FEEL LIKE IT'S DAD.</p>
             <p>I FIGHT BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
           </div>
 
