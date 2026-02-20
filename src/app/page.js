@@ -154,21 +154,27 @@ export default function Home() {
 
         <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
 
-        {/* Additional History */}
+        {/* History */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">additional history</h2>
+          <h2 className="font-bold mb-4">history</h2>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
             <div>
+              <p className="subheading">SYSTEM ERA</p>
+              <p>2014-PRESENT</p>
+              <p>co-founder, chief creative officer, and creative director</p>
+            </div>
+
+            <div>
               <p className="subheading">UBISOFT</p>
               <p>2011-2016</p>
-              <p>assistant art director, lead artist, artist</p>
+              <p>assistant art director</p>
             </div>
 
             <div>
               <p className="subheading">POLYCOUNT</p>
               <p>2006-2016</p>
-              <p>community & engagement lead<br />10x community growth</p>
+              <p>community & engagement lead</p>
             </div>
 
             <div>
