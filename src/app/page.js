@@ -76,12 +76,11 @@ export default function Home() {
         {/* About - moved up, using same formatting */}
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p className="font-bold">HERE'S SOME RAPID FIRE TRUTHS ABOUT ME AND THINGS I BELIEVE IN AS AN ARTIST, DESIGNER, AND CREATOR.</p>
-            <p>IN 2001 I DROPPED OUT OF COLLEGE AND LEARNED TO MAKE VIDEO GAMES FROM THE INTERNET BEFORE IT WAS THE DEFAULT.</p>
-            <p>I CREATED <strong>ASTRONEER</strong> AND CO-FOUNDED <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>.</p>
-            <p>I BUILD SANDBOXES THAT TURN STRANGERS INTO FRIENDS AND FEEL THE BEST MOMENTS IN GAMES AREN'T DESIGNED. THEY EMERGE WHEN PEOPLE ALIGN AROUND SHARED GOALS WHILE JUST MESSING AROUND.</p>
-            <p>PRODUCT DESIGN & PHOTOGRAPHY INSPIRE ME: CONTRAINTS FOSTER CREATIVITY.</p>
-            <p>VALUE IS PERCEIVED, NOT INHERENT.</p>
+            <p>I BUILD SANDBOXES THAT FOSTER FRIENDSHIPS.</p>
+            <p>I MAKE SPACES FOR STANDING SHOULDER-TO-SHOULDER, NOT FACE-TO-FACE.</p>
+            <p>I CREATE KNOWING THAT VALUE IS PERCEIVED AND NOT INHERENT.</p>
+            <p>I CO-FOUND <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a> AND CREATED <strong>ASTRONEER</strong>.</p>
+            <p>I FIGHT BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
           </div>
 
           {/* Social links */}
