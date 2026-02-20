@@ -1,85 +1,49 @@
 'use client';
-import { useState, useEffect } from 'react';
+import ParallaxImage from '@/components/ParallaxImage';
+import SectionHeader from '@/components/SectionHeader';
+import ExternalLink from '@/components/ExternalLink';
+import ProfileSection from '@/components/ProfileSection';
+import { colors, typography } from '@/styles/theme';
+
+const HEADER_IMAGES = [
+  '/photo-1.jpg',
+  '/photo-2.jpg',
+  '/photo-3.jpg',
+  '/photo-4.jpg',
+  '/photo-5.jpg',
+];
 
 export default function Home() {
-  const [bgColor, setBgColor] = useState('');
-  const [scrollY, setScrollY] = useState(0);
-  const [selectedImage, setSelectedImage] = useState('');
-
-  useEffect(() => {
-    // Cloud Dancer background
-    setBgColor('#F0EEE4'); // Pantone Cloud Dancer 11-4201 TCX
-    
-    // Randomly select an image
-    const images = [
-      '/photo-1.jpg',
-      '/photo-2.jpg',
-      '/photo-3.jpg',
-      '/photo-4.jpg',
-      '/photo-5.jpg',
-    ];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    setSelectedImage(randomImage);
-  }, []);
-
-  useEffect(() => {
-    // Handle scroll for parallax effect
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <main className="min-h-screen bg-white">
       <div 
-        className="max-w-3xl mx-auto px-12 py-16 md:py-24 min-h-screen"
-        style={{
-          position: 'relative',
-          backgroundColor: '#F0EEE4',
-        }}
+        className="max-w-3xl mx-auto px-12 py-16 md:py-24 min-h-screen bg-cloud-dancer"
+        style={{ position: 'relative' }}
       >
-        {/* Parallax Image */}
-        <div 
-          style={{ 
-            width: 'calc(100% + 96px)',
-            height: '256px',
-            overflow: 'hidden',
-            position: 'relative',
-            marginLeft: '-48px',
-            marginTop: '-96px',
-            marginBottom: '48px',
-          }}
-        >
-          <img 
-            src={selectedImage} 
-            alt="Photography by Adam Bromell"
-            style={{
-              width: '100%',
-              height: 'auto',
-              position: 'absolute',
-              bottom: '-85px',
-              left: 0,
-              transform: `translateY(${scrollY * 0.5}px)`,
-              transition: 'transform 0.1s ease-out',
-            }}
-          />
-        </div>
+        <ParallaxImage images={HEADER_IMAGES} />
         
         {/* Header */}
         <header className="mb-4">
-          <h1 className="font-bold mb-0">HI, I'M ADAM.</h1>
+          <h1 
+            className="font-bold mb-0"
+            style={{ fontSize: typography.sizes.h1, lineHeight: typography.lineHeights.tight }}
+          >
+            HI, I'M ADAM.
+          </h1>
         </header>
 
-        {/* About - moved up, using same formatting */}
+        {/* About */}
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p>I BUILD SANDBOXES THAT FOSTER FRIENDSHIPS.</p>
             <p>I MAKE SPACES FOR STANDING SHOULDER-TO-SHOULDER, NOT FACE-TO-FACE.</p>
             <p>I CREATE KNOWING THAT VALUE IS PERCEIVED AND NOT INHERENT.</p>
-            <p>I AM CO-FOUNDER & CREATIVE DIRECTOR OF <a href="https://www.systemera.net/" target="_blank" rel="noopener noreferrer" className="hover:underline font-bold" style={{ color: '#C5003E' }}>SYSTEM ERA</a>.</p>
+            <p>
+              I AM CO-FOUNDER & CREATIVE DIRECTOR OF{' '}
+              <ExternalLink href="https://www.systemera.net/" bold>
+                SYSTEM ERA
+              </ExternalLink>.
+            </p>
             <p>I FIND IT HARD TO SAY I CREATED <strong>ASTRONEER</strong> BUT I DO FEEL LIKE IT'S DAD.</p>
             <p>I FIGHT BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
           </div>
@@ -87,113 +51,98 @@ export default function Home() {
           {/* Social links */}
           <div className="flex gap-6 mt-8">
             <p>
-              bluesky: <a 
-                href="https://bsky.app/profile/adambromell.info" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:underline"
-                style={{ color: '#C5003E' }}
-              >
+              bluesky: <ExternalLink href="https://bsky.app/profile/adambromell.info">
                 adambromell.info
-              </a>
+              </ExternalLink>
             </p>
             <p>
-              threads: <a 
-                href="https://www.threads.net/@adambromell" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:underline"
-                style={{ color: '#C5003E' }}
-              >
+              threads: <ExternalLink href="https://www.threads.net/@adambromell">
                 @adambromell
-              </a>
+              </ExternalLink>
             </p>
             <p>
-              instagram (photography): <a 
-                href="https://www.instagram.com/yeti.snaps/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:underline"
-                style={{ color: '#C5003E' }}
-              >
+              instagram (photography): <ExternalLink href="https://www.instagram.com/yeti.snaps/">
                 @yeti.snaps
-              </a>
+              </ExternalLink>
             </p>
           </div>
         </section>
 
-        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
+        <hr className="mb-12" style={{ borderColor: colors.black, borderWidth: '0.5px' }} />
 
         {/* System Era */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">system era</h2>
+          <SectionHeader>system era</SectionHeader>
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <div>
-              <p className="subheading">COMPANY</p>
+            <ProfileSection title="COMPANY">
               <p>co-founded in 2014</p>
-              <p><a href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>acquired by DEVOLVER DIGITAL in 2023</a></p>
-            </div>
+              <p>
+                <ExternalLink href="https://www.gamedeveloper.com/business/devolver-digital-to-acquire-astroneer-dev-system-era-for-up-to-40m">
+                  acquired by DEVOLVER DIGITAL in 2023
+                </ExternalLink>
+              </p>
+            </ProfileSection>
             
-            <div className="mt-6">
-              <p className="subheading">ASTRONEER</p>
+            <ProfileSection title="ASTRONEER" spacing="large">
               <p>base building survival sandbox</p>
-              <p><a href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>pioneering voxel technology</a></p>
+              <p>
+                <ExternalLink href="https://www.gamedeveloper.com/design/what-i-astroneer-i-s-devs-learned-while-leaving-early-access">
+                  pioneering voxel technology
+                </ExternalLink>
+              </p>
               <p>14M+ players across all platforms</p>
               <p>#1 game on STEAM weeks after early access launch</p>
-            </div>
+            </ProfileSection>
 
-            <div className="mt-6">
-              <p className="subheading">STARSEEKER: ASTRONEER EXPEDITIONS</p>
+            <ProfileSection title="STARSEEKER: ASTRONEER EXPEDITIONS" spacing="large">
               <p>massively co-operative expeditions</p>
               <p>40+ player space station hub</p>
-              <p><a href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#C5003E' }}>ethical, sustainable "live service"</a></p>
+              <p>
+                <ExternalLink href="https://gamerant.com/starseeker-astroneer-expeditions-live-service-fomo-content/">
+                  ethical, sustainable "live service"
+                </ExternalLink>
+              </p>
               <p>releasing 2026</p>
-            </div>
+            </ProfileSection>
           </div>
         </section>
 
-        <hr className="mb-12" style={{ borderColor: '#000', borderWidth: '0.5px' }} />
+        <hr className="mb-12" style={{ borderColor: colors.black, borderWidth: '0.5px' }} />
 
         {/* History */}
         <section className="mb-12">
-          <h2 className="font-bold mb-4">history</h2>
+          <SectionHeader>history</SectionHeader>
           <div className="space-y-6 text-gray-800 leading-relaxed">
             
-            <div>
-              <p className="subheading">SYSTEM ERA</p>
+            <ProfileSection title="SYSTEM ERA">
               <p>2014-PRESENT</p>
               <p>co-founder, chief creative officer, and creative director</p>
-            </div>
+            </ProfileSection>
 
-            <div>
-              <p className="subheading">UBISOFT</p>
+            <ProfileSection title="UBISOFT">
               <p>2011-2016</p>
               <p>assistant art director</p>
-            </div>
+            </ProfileSection>
 
-            <div>
-              <p className="subheading">POLYCOUNT</p>
+            <ProfileSection title="POLYCOUNT">
               <p>2006-2016</p>
               <p>community & engagement lead</p>
-            </div>
+            </ProfileSection>
 
-            <div>
-              <p className="subheading">RELIC ENTERTAINMENT</p>
+            <ProfileSection title="RELIC ENTERTAINMENT">
               <p>2009-2011</p>
               <p>artist</p>
-            </div>
+            </ProfileSection>
 
-            <div>
-              <p className="subheading">THREEWAVE SOFTWARE</p>
+            <ProfileSection title="THREEWAVE SOFTWARE">
               <p>2005-2009</p>
               <p>artist</p>
-            </div>
+            </ProfileSection>
 
-            <div>
-              <p className="subheading">Freelance</p>
+            <ProfileSection title="Freelance">
               <p>2001-2005</p>
               <p>artist</p>
-            </div>
+            </ProfileSection>
 
           </div>
         </section>
