@@ -44,7 +44,7 @@ export default function Home() {
                 SYSTEM ERA
               </ExternalLink>.
             </p>
-            <p>I FIND IT HARD TO SAY I CREATED <strong>ASTRONEER</strong> BUT I DO FEEL LIKE IT'S DAD.</p>
+            <p>I FIND IT HARD TO SAY "I CREATED <strong>ASTRONEER</strong>" BUT I DO FEEL LIKE IT'S DAD.</p>
             <p>I FIGHT BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
           </div>
 
