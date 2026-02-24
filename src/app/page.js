@@ -28,24 +28,24 @@ export default function Home() {
             className="font-bold mb-0"
             style={{ fontSize: typography.sizes.h1, lineHeight: typography.lineHeights.tight }}
           >
-            HI, I'M ADAM.
+            ADAM BROMELL
           </h1>
         </header>
 
         {/* About */}
         <section className="mb-12">
           <div className="space-y-4 text-gray-800 leading-relaxed">
-            <p>I BUILD SANDBOXES THAT FOSTER FRIENDSHIPS.</p>
-            <p>I MAKE SPACES FOR STANDING SHOULDER-TO-SHOULDER, NOT FACE-TO-FACE.</p>
-            <p>I CREATE KNOWING THAT VALUE IS PERCEIVED AND NOT INHERENT.</p>
+            <p>BUILDING SANDBOXES THAT FOSTER FRIENDSHIPS.</p>
+            <p>MAKING SPACES FOR STANDING SHOULDER-TO-SHOULDER, NOT FACE-TO-FACE.</p>
+            <p>CREATING KNOWING THAT VALUE IS PERCEIVED, NEVER INHERENT.</p>
             <p>
-              I AM CO-FOUNDER & CREATIVE DIRECTOR OF{' '}
+              CO-FOUNDER & CREATIVE DIRECTOR OF{' '}
               <ExternalLink href="https://www.systemera.net/" bold>
                 SYSTEM ERA
               </ExternalLink>.
             </p>
-            <p>I FIND IT HARD TO SAY "I CREATED <strong>ASTRONEER</strong>" BUT I DO FEEL LIKE IT'S DAD.</p>
-            <p>I FIGHT BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
+            <p><strong>ASTRONEER</strong>'S DAD.</p>
+            <p>FIGHTING BURNOUT BY CHASING LIGHT THROUGH A LENS.</p>
           </div>
 
           {/* Social links */}
