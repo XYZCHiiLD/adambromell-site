@@ -145,20 +145,19 @@ function BottomNav({ tab, setTab }) {
   ];
   return (
     <div style={{
-      position: 'fixed', bottom: 0, left: 0, right: 0,
-      height: 64, background: colors.black,
-      display: 'flex', borderTop: '1px solid #222', zIndex: 100,
+      flexShrink: 0, height: 72, background: colors.black,
+      display: 'flex', borderTop: '1px solid #333',
     }}>
       {items.map(({ key, label }) => (
         <button key={key} onClick={() => setTab(key)} style={{
           flex: 1, display: 'flex', flexDirection: 'column',
-          alignItems: 'center', justifyContent: 'center', gap: 3,
+          alignItems: 'center', justifyContent: 'center', gap: 5,
           background: 'transparent', border: 'none',
-          color: tab === key ? colors.ribbonRed : '#555',
-          cursor: 'pointer', padding: '8px 0', transition: 'color 0.15s',
+          color: tab === key ? colors.ribbonRed : '#888',
+          cursor: 'pointer', padding: '10px 0', transition: 'color 0.15s',
         }}>
-          {ICONS[key]}
-          <span style={{ fontSize: 9, fontFamily: 'monospace', letterSpacing: 1, fontWeight: tab === key ? 'bold' : 'normal' }}>{label}</span>
+          <span style={{ display: 'flex', transform: 'scale(1.45)', transformOrigin: 'center' }}>{ICONS[key]}</span>
+          <span style={{ fontSize: 11, fontFamily: 'monospace', letterSpacing: 1, fontWeight: 'bold', marginTop: 2 }}>{label}</span>
         </button>
       ))}
     </div>
