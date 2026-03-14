@@ -158,7 +158,7 @@ function SetupScreen({ onStart }) {
   };
 
   const stk = getStack(startBb), tot = stackTotal(startBb), note = stackNote(startBb);
-  const chipSize = Math.min(52, Math.max(36, window?.innerWidth ? Math.floor(window.innerWidth / 10) : 48));
+  const chipSize = Math.min(52, Math.max(36, typeof window !== 'undefined' ? Math.floor(window.innerWidth / 10) : 48));
 
   return (
     <div style={{ width: '100%', height: '100dvh', overflow: 'auto', background: colors.cloudDancer, fontFamily: 'Georgia, serif' }}>
