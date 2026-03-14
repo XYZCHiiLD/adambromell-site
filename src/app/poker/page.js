@@ -191,11 +191,11 @@ function SetupScreen({ onStart }) {
     <div style={{ minHeight: '100vh', background: colors.cloudDancer, fontFamily: 'Georgia, serif' }}>
       <div style={{ background: colors.black, padding: '28px 20px 22px', textAlign: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
-          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(22px,6vw,30px)' }}>♠</span>
-          <span style={{ fontFamily: DISPLAY, color: colors.white, fontSize: 'clamp(32px,9vw,48px)', letterSpacing: 10 }}>HOLD'EM</span>
-          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(22px,6vw,30px)' }}>♥</span>
+          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(28px,7vw,38px)' }}>♠</span>
+          <span style={{ fontFamily: DISPLAY, color: colors.white, fontSize: 'clamp(40px,11vw,60px)', letterSpacing: 10, fontWeight: 'bold' }}>HOLD'EM</span>
+          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(28px,7vw,38px)' }}>♥</span>
         </div>
-        <div style={{ color: '#555', fontSize: 10, letterSpacing: 4, fontFamily: 'monospace', marginTop: 6 }}>HOME GAME COMPANION</div>
+        <div style={{ color: '#aaa', fontSize: 13, letterSpacing: 4, fontFamily: 'monospace', marginTop: 6, fontWeight: 'bold' }}>HOME GAME COMPANION</div>
       </div>
 
       <div style={{ padding: '20px 16px 60px', maxWidth: 600, margin: '0 auto' }}>
@@ -317,13 +317,13 @@ function GameScreen({ config, onReset, onEnd }) {
 
       {/* Top bar */}
       <div style={{ position: 'sticky', top: 0, zIndex: 50, background: colors.black, borderBottom: '1px solid #222', height: 52, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 16px' }}>
-        <span style={{ fontFamily: 'monospace', color: colors.white, fontSize: 12, letterSpacing: 3 }}>♠ HOLD'EM</span>
+        <span style={{ fontFamily: 'monospace', color: colors.white, fontSize: 15, letterSpacing: 3, fontWeight: 'bold' }}>♠ HOLD'EM</span>
         <span style={{ fontFamily: 'monospace', fontSize: 10, color: colors.white, padding: '4px 10px', borderRadius: 20, background: rebuyOpen ? colors.piquantGreen : colors.allure, fontWeight: 'bold', letterSpacing: 1 }}>
           {rebuyOpen ? 'RE-BUYS OPEN' : 'CLOSED'}
         </span>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ fontFamily: 'monospace', fontSize: 13, fontWeight: 'bold', color: colors.sandstorm }}>{fmtM(totalPot)}</span>
-          <button onClick={onReset} style={{ fontFamily: 'monospace', fontSize: 10, color: '#666', background: 'transparent', border: '1px solid #333', borderRadius: 4, padding: '3px 8px', letterSpacing: 1, cursor: 'pointer' }}>RESET</button>
+          <span style={{ fontFamily: 'monospace', fontSize: 16, fontWeight: 'bold', color: colors.sandstorm }}>{fmtM(totalPot)}</span>
+          <button onClick={onReset} style={{ fontFamily: 'monospace', fontSize: 12, color: '#999', background: 'transparent', border: '1px solid #444', borderRadius: 4, padding: '4px 10px', letterSpacing: 1, cursor: 'pointer', fontWeight: 'bold' }}>RESET</button>
         </div>
       </div>
 
@@ -440,10 +440,10 @@ function GameScreen({ config, onReset, onEnd }) {
                 border: i === levelIdx ? 'none' : '1px solid #D1CFC6',
                 opacity: i < levelIdx ? 0.45 : 1,
               }}>
-                <span style={{ fontFamily: DISPLAY, fontSize: 22, letterSpacing: 1, color: i === levelIdx ? colors.ribbonRed : i < levelIdx ? '#aaa' : colors.textGray, alignSelf: 'center' }}>{b.level}</span>
-                <span style={{ fontFamily: 'monospace', fontSize: 12, color: i === levelIdx ? '#666' : '#8B8B80', alignSelf: 'center' }}>{i * 15}m</span>
-                <span style={{ fontFamily: 'monospace', fontSize: 14, fontWeight: 'bold', color: i === levelIdx ? colors.white : i < levelIdx ? '#aaa' : colors.textGray, alignSelf: 'center' }}>{b.sb}</span>
-                <span style={{ fontFamily: DISPLAY, fontSize: 22, letterSpacing: 1, color: i === levelIdx ? colors.white : i < levelIdx ? '#aaa' : colors.black, alignSelf: 'center' }}>{b.bb}</span>
+                <span style={{ fontFamily: DISPLAY, fontSize: i === levelIdx ? 28 : 22, letterSpacing: 1, color: i === levelIdx ? colors.ribbonRed : i < levelIdx ? '#aaa' : colors.textGray, alignSelf: 'center', fontWeight: i === levelIdx ? 'bold' : 'normal' }}>{b.level}</span>
+                <span style={{ fontFamily: 'monospace', fontSize: i === levelIdx ? 15 : 12, color: i === levelIdx ? '#aaa' : '#8B8B80', alignSelf: 'center', fontWeight: i === levelIdx ? 'bold' : 'normal' }}>{i * 15}m</span>
+                <span style={{ fontFamily: 'monospace', fontSize: i === levelIdx ? 17 : 14, fontWeight: 'bold', color: i === levelIdx ? colors.white : i < levelIdx ? '#aaa' : colors.textGray, alignSelf: 'center' }}>{b.sb}</span>
+                <span style={{ fontFamily: DISPLAY, fontSize: i === levelIdx ? 28 : 22, letterSpacing: 1, color: i === levelIdx ? colors.white : i < levelIdx ? '#aaa' : colors.black, alignSelf: 'center', fontWeight: i === levelIdx ? 'bold' : 'normal' }}>{b.bb}</span>
               </div>
             ))}
           </div>
@@ -453,8 +453,8 @@ function GameScreen({ config, onReset, onEnd }) {
         {tab === 'payouts' && (
           <div style={{ padding: '16px', background: colors.cloudDancer, minHeight: 'calc(100vh - 52px - 64px)' }}>
             <div style={{ background: colors.black, borderRadius: 12, padding: '24px', marginBottom: 16, textAlign: 'center' }}>
-              <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(42px,11vw,60px)', color: colors.white, letterSpacing: 2, lineHeight: 1 }}>{fmtM(totalPot)}</div>
-              <div style={{ fontSize: 11, fontFamily: 'monospace', color: '#555', marginTop: 6, letterSpacing: 1 }}>{numPlayers} PLAYERS · {fmtM(buyIn)} BUY-IN</div>
+              <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(52px,13vw,72px)', color: colors.white, letterSpacing: 2, lineHeight: 1, fontWeight: 'bold' }}>{fmtM(totalPot)}</div>
+              <div style={{ fontSize: 14, fontFamily: 'monospace', color: '#aaa', marginTop: 8, letterSpacing: 1, fontWeight: 'bold' }}>{numPlayers} PLAYERS · {fmtM(buyIn)} BUY-IN</div>
             </div>
 
             {payoutData.map((p, i) => (
@@ -502,15 +502,15 @@ function EndScreen({ players, totalPot, numPlayers, onRestart }) {
     <div style={{ minHeight: '100vh', background: colors.cloudDancer, fontFamily: 'Georgia, serif' }}>
       <div style={{ background: colors.black, padding: '28px 20px 22px', textAlign: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
-          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(22px,6vw,30px)' }}>♣</span>
-          <span style={{ fontFamily: DISPLAY, color: colors.white, fontSize: 'clamp(32px,9vw,48px)', letterSpacing: 10 }}>GAME OVER</span>
-          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(22px,6vw,30px)' }}>♦</span>
+          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(28px,7vw,38px)' }}>♣</span>
+          <span style={{ fontFamily: DISPLAY, color: colors.white, fontSize: 'clamp(40px,11vw,60px)', letterSpacing: 10, fontWeight: 'bold' }}>GAME OVER</span>
+          <span style={{ color: colors.ribbonRed, fontSize: 'clamp(28px,7vw,38px)' }}>♦</span>
         </div>
       </div>
       <div style={{ padding: '20px 16px 60px', maxWidth: 600, margin: '0 auto' }}>
         <div style={{ background: colors.black, borderRadius: 12, padding: '28px', marginBottom: 16, textAlign: 'center' }}>
-          <div style={{ fontSize: 10, letterSpacing: 3, color: '#555', fontFamily: 'monospace', marginBottom: 8 }}>FINAL POT</div>
-          <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(48px,13vw,70px)', color: colors.white, letterSpacing: 2, lineHeight: 1 }}>{fmtM(totalPot)}</div>
+          <div style={{ fontSize: 13, letterSpacing: 3, color: '#aaa', fontFamily: 'monospace', marginBottom: 8, fontWeight: 'bold' }}>FINAL POT</div>
+          <div style={{ fontFamily: DISPLAY, fontSize: 'clamp(58px,15vw,84px)', color: colors.white, letterSpacing: 2, lineHeight: 1, fontWeight: 'bold' }}>{fmtM(totalPot)}</div>
         </div>
 
         {po.map((p, i) => (
