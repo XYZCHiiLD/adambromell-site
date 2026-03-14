@@ -24,15 +24,16 @@ const CHIP_TEXT = {
 };
 
 // All stacks verified for 8-player supply and ability to physically make SB + BB
+// Biggest denomination capped at ×2. Value redistributed toward smaller chips.
 const STACK_PRESETS = {
-  // 5/10  — SB: 1×5,  BB: 2×5
-  10:  [{ chip: 5,   qty: 10 }, { chip: 25,  qty: 6  }, { chip: 100, qty: 3 }, { chip: 500, qty: 1 }], // = 1,000
-  // 10/25 — SB: 2×5,  BB: 1×25
-  25:  [{ chip: 5,   qty: 4  }, { chip: 25,  qty: 4  }, { chip: 100, qty: 4 }, { chip: 500, qty: 4 }], // = 2,520
-  // 25/50 — SB: 1×25, BB: 2×25
-  50:  [{ chip: 25,  qty: 4  }, { chip: 100, qty: 10 }, { chip: 500, qty: 4 }, { chip: 1000, qty: 2 }], // = 5,100
-  // 50/100 — SB: 2×25, BB: 1×100
-  100: [{ chip: 25,  qty: 4  }, { chip: 100, qty: 10 }, { chip: 500, qty: 6 }, { chip: 1000, qty: 6 }], // = 10,100
+  // 5/10  — SB: 1×5, BB: 2×5 — 500×1 max, surplus to 5s and 25s
+  10:  [{ chip: 5,   qty: 10 }, { chip: 25,  qty: 10 }, { chip: 100, qty: 2  }, { chip: 500,  qty: 1 }], // = 1,000  (100 BB)
+  // 10/25 — SB: 2×5, BB: 1×25 — 500×2 max, surplus to 5s and 25s
+  25:  [{ chip: 5,   qty: 10 }, { chip: 25,  qty: 10 }, { chip: 100, qty: 12 }, { chip: 500,  qty: 2 }], // = 2,500  (100 BB)
+  // 25/50 — SB: 1×25, BB: 2×25 — 1000×2 max, surplus to 25s and 100s
+  50:  [{ chip: 25,  qty: 8  }, { chip: 100, qty: 8  }, { chip: 500, qty: 4  }, { chip: 1000, qty: 2 }], // = 5,000  (100 BB)
+  // 50/100 — SB: 2×25, BB: 1×100 — 1000×2 max, supply-limited to ~62 BB
+  100: [{ chip: 25,  qty: 8  }, { chip: 100, qty: 12 }, { chip: 500, qty: 6  }, { chip: 1000, qty: 2 }], // = 6,200  (~62 BB — supply ceiling)
 };
 
 const BLIND_OPTS = [
@@ -87,6 +88,17 @@ function getStack(bb) {
 
 function stackTotal(bb) {
   return getStack(bb).reduce((s, c) => s + c.chip * c.qty, 0);
+}
+
+function stackNote(bb) {
+  const tot = stackTotal(bb);
+  const bbCount = Math.round(tot / bb);
+  const sb = BLIND_OPTS.find(o => o.bb === bb)?.sb || 0;
+  const limited = bb === 100;
+  return {
+    label: limited ? `~${bbCount} BB at ${sb}/${bb}` : `${bbCount} BB at ${sb}/${bb}`,
+    warning: limited ? 'Supply limit — chip set cannot reach 100 BB at this level' : null,
+  };
 }
 
 function getPayouts(n) {
@@ -173,9 +185,9 @@ function SetupScreen({ onStart }) {
     });
   };
 
-  const stk = getStack(startBb);
-  const tot = stackTotal(startBb);
-  const sb  = BLIND_OPTS.find(o => o.bb === startBb)?.sb || 5;
+  const stk  = getStack(startBb);
+  const tot  = stackTotal(startBb);
+  const note = stackNote(startBb);
 
   return (
     <div style={{ minHeight: '100vh', background: colors.white, maxWidth: 640, margin: '0 auto', fontFamily: 'Georgia, serif' }}>
@@ -238,7 +250,8 @@ function SetupScreen({ onStart }) {
             ))}
             <div style={{ marginLeft: 'auto', textAlign: 'right' }}>
               <span style={{ display: 'block', fontSize: 'clamp(20px, 5vw, 26px)', fontFamily: 'monospace', fontWeight: 'bold', color: colors.black }}>{tot.toLocaleString()}</span>
-              <span style={{ display: 'block', fontSize: 12, fontFamily: 'monospace', color: '#8B8B80', letterSpacing: 1 }}>100 BB at {sb}/{startBb}</span>
+              <span style={{ display: 'block', fontSize: 12, fontFamily: 'monospace', color: '#8B8B80', letterSpacing: 1 }}>{note.label}</span>
+              {note.warning && <span style={{ display: 'block', fontSize: 10, fontFamily: 'monospace', color: colors.allure, marginTop: 4, maxWidth: 140, lineHeight: 1.4 }}>{note.warning}</span>}
             </div>
           </div>
         </section>
