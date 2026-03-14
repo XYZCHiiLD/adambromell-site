@@ -4,13 +4,35 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { colors } from '@/styles/theme';
 
 // ── Constants ─────────────────────────────────────────────────────────────────
-const CHIP_COL = { 5: colors.ribbonRed, 25: colors.deepBlue, 100: colors.textGray, 500: colors.piquantGreen, 1000: colors.flax };
+// Chip colours match the physical set; gold trim via border
+const CHIP_COL = {
+  1:    '#E8E8E0', // white
+  5:    '#C5003E', // red
+  25:   '#00A878', // green
+  100:  '#003D6A', // navy blue
+  500:  '#7B2D8B', // purple
+  1000: '#F5E6C8', // cream
+};
 
+const CHIP_TEXT = {
+  1:    '#374151',
+  5:    '#ffffff',
+  25:   '#ffffff',
+  100:  '#ffffff',
+  500:  '#ffffff',
+  1000: '#374151',
+};
+
+// All stacks verified for 8-player supply and ability to physically make SB + BB
 const STACK_PRESETS = {
-  10:  [{ chip: 5,   qty: 10 }, { chip: 25,  qty: 6 }, { chip: 100, qty: 8  }],
-  25:  [{ chip: 25,  qty: 4  }, { chip: 100, qty: 4 }, { chip: 500, qty: 4  }],
-  50:  [{ chip: 100, qty: 10 }, { chip: 500, qty: 4 }, { chip: 1000, qty: 2 }],
-  100: [{ chip: 100, qty: 10 }, { chip: 500, qty: 6 }, { chip: 1000, qty: 6 }],
+  // 5/10  — SB: 1×5,  BB: 2×5
+  10:  [{ chip: 5,   qty: 10 }, { chip: 25,  qty: 6  }, { chip: 100, qty: 3 }, { chip: 500, qty: 1 }], // = 1,000
+  // 10/25 — SB: 2×5,  BB: 1×25
+  25:  [{ chip: 5,   qty: 4  }, { chip: 25,  qty: 4  }, { chip: 100, qty: 4 }, { chip: 500, qty: 4 }], // = 2,520
+  // 25/50 — SB: 1×25, BB: 2×25
+  50:  [{ chip: 25,  qty: 4  }, { chip: 100, qty: 10 }, { chip: 500, qty: 4 }, { chip: 1000, qty: 2 }], // = 5,100
+  // 50/100 — SB: 2×25, BB: 1×100
+  100: [{ chip: 25,  qty: 4  }, { chip: 100, qty: 10 }, { chip: 500, qty: 6 }, { chip: 1000, qty: 6 }], // = 10,100
 };
 
 const BLIND_OPTS = [
@@ -60,7 +82,7 @@ function genBlinds(bb, hours) {
 }
 
 function getStack(bb) {
-  return (STACK_PRESETS[bb] || STACK_PRESETS[10]).map(c => ({ ...c, colour: CHIP_COL[c.chip] }));
+  return (STACK_PRESETS[bb] || STACK_PRESETS[10]).map(c => ({ ...c, colour: CHIP_COL[c.chip], textColour: CHIP_TEXT[c.chip] }));
 }
 
 function stackTotal(bb) {
@@ -208,8 +230,8 @@ function SetupScreen({ onStart }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap' }}>
             {stk.map(sc => (
               <div key={sc.chip} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
-                <div style={{ width: 44, height: 44, borderRadius: '50%', background: sc.colour, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed rgba(255,255,255,0.4)', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
-                  <span style={{ color: colors.white, fontSize: 12, fontWeight: 'bold', fontFamily: 'monospace' }}>{sc.chip}</span>
+                <div style={{ width: 44, height: 44, borderRadius: '50%', background: sc.colour, display: 'flex', alignItems: 'center', justifyContent: 'center', border: '3px dashed #D4AF37', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+                  <span style={{ color: sc.textColour, fontSize: 12, fontWeight: 'bold', fontFamily: 'monospace' }}>{sc.chip}</span>
                 </div>
                 <span style={{ color: '#8B8B80', fontSize: 11, fontFamily: 'monospace' }}>×{sc.qty}</span>
               </div>
